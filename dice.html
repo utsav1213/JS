@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>=Dice Game</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background: radial-gradient(circle, #1a2a6c, #b8c6db);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    
+        /* Heading Styling */
+        h1 {
+            font-size: 3rem;
+            color: #ff8c42;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+    
+        /* Main Container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    
+        /* Player Info */
+        .player-info {
+            font-size: 1.6rem;
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #f2f2f2;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+        }
+    
+        /* Dice Display */
+        .dice {
+            font-size: 7rem;
+            margin: 25px 0;
+            color: #ff8c42;
+            font-weight: bold;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+    
+        /* Buttons */
+        .buttons {
+            margin-top: 20px;
+        }
+    
+        button {
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            background: #6c63ff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #5248c4;
+            transform: translateY(-3px);
+        }
+    
+        button:disabled {
+            background-color: #aaa;
+            color: #eee;
+            cursor: not-allowed;
+        }
+    
+        /* Reset Button */
+        .reset {
+            background-color: #f6416c;
+        }
+    
+        .reset:hover {
+            background-color: #d63057;
+        }
+    
+        /* Winner Display */
+        .winner {
+            font-size: 2rem;
+            color: #28df99;
+            margin-top: 25px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+    
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dice Game</h1>
+        <div id="player1" class="player-info">Player 1 Score: <span id="score1">0</span></div>
+        <div id="player2" class="player-info">Player 2 Score: <span id="score2">0</span></div>
+        <div class="dice" id="dice"></div>
+        <div class="buttons">
+            <button id="roll1">Player 1 </button>
+            <button id="roll2" disabled>Player 2</button>
+            <button id="reset" class="reset">Reset</button>
+        </div>
+        <div class="winner" id="winner"></div>
+    </div>
+    <script src="./dice.js"></script>
+</body>
+
+</html>
