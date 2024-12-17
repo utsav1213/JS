@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Render</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: #f8f9fa;
+        font-family: 'Arial', sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      #t-1 {
+        width: 60%;
+        display: flex;
+        height: auto;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        #t-1 {
+          width: 80%;
+        }
+
+        table {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="t-1">
+      <table border="0">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Counter</td>
+            <td>
+              <a href="./counter.html">Click here</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Resume</td>
+            <td>
+              <a href="./resume.html">Click here</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Feedback Form</td>
+            <td>
+              <a href="./form.html">Click here</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
