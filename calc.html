@@ -5,111 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Geometry Calculator</title>
     <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #00d2be, #555555);
-            color: #f2f2f2;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background: #101820;
-            color: #00d2be;
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px;
-            margin: 20px;
-        }
-
-        .section {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid #00d2be;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height:auto;
-        }
-
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0, 210, 190, 0.5);
-        }
-
-        .image {
-            height: 200px;
-            width: auto; 
-        }
-
-        h2 {
-            color: #000000;
-            margin-bottom: 15px;
-        }
-
-        input {
-            padding: 10px;
-            margin: 8px 0;
-            border: 2px solid #555;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 80%;
-            outline: none;
-            background: #333;
-            color: #f2f2f2;
-        }
-
-        input:focus {
-            border-color: #00d2be;
-        }
-
-        button {
-            background: #00d2be;
-            color: #101820;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-
-        button:hover {
-            background: #2aac9f;
-            color: #000000;
-        }
-
-        .formula {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #1c1c1c;
-            font-style: italic;
-        }
-
-        .result {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #000000;
-        }
-
-    </style>
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #ffffff, #e6f7ff); /* Light gradient */
+        color: #333333; /* Dark text for readability */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        background: #f8f9fa; /* Light background */
+        color: #007b83; /* Teal-like header color */
+        padding: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .section {
+        background: #ffffff; /* Pure white background for cards */
+        border: 2px solid #007b83; /* Teal border */
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 123, 131, 0.3);
+    }
+    
+    .image {
+        height: 200px;
+        width: auto;
+    }
+    
+    h2 {
+        color: #007b83; /* Match the header color */
+        margin-bottom: 15px;
+    }
+    
+    input {
+        padding: 10px;
+        margin: 8px 0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 80%;
+        outline: none;
+        background: #f9f9f9; /* Light input background */
+        color: #333;
+    }
+    
+    input:focus {
+        border-color: #007b83;
+    }
+    
+    button {
+        background: #007b83; /* Teal button */
+        color: #ffffff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+    
+    button:hover {
+        background: #005f66; /* Darker teal */
+        color: #ffffff;
+    }
+    
+    .formula {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555555; /* Slightly darker text */
+        font-style: italic;
+    }
+    
+    .result {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333333; /* Dark text for contrast */
+    }
+</style>    
     <script src="https://kit.fontawesome.com/c4cb78a369.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header><a href="./index.html" style="color: #00d2be;position: absolute;left:0;margin-left: 5%;"><i class="fa-solid fa-house"></i></a>
+<header>
     Geometry Calculator
 </header>
 
