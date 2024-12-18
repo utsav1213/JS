@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value Converter</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #222;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #ffcc00;
+        }
+
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"],
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            background: #444;
+            color: #f4f4f4;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #ffcc00;
+            color: #222;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background: #e6b800;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #4caf50;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Value Converter</h1>
+        <label for="select">Division:</label>
+        <input type="number" id="val" placeholder="Enter value">
+        <select id="select">
+            <option value="">Select converter</option>
+            <option value="cel">Celsius to Fahrenheit</option>
+            <option value="fah">Fahrenheit to Celsius</option>
+            <option value="usd">USD to INR</option>
+            <option value="inr">INR to USD</option>
+        </select>
+        <button type="submit" class="button" onclick="converter()">Convert</button>
+        <div id="result"></div>
+    </div>
+    <script src="conveter.js"></script>
+</body>
+</html>
